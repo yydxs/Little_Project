@@ -1,10 +1,10 @@
 /* ========================================
-   卡片设计合集 - CSS样式
-   选择器：标签选择器、类选择器、ID选择器
-   属性：文本样式、背景、padding、margin、flexbox
+   Card Design Collection - CSS Styles
+   Selectors: tag, class, ID selectors
+   Properties: text styles, background, padding, margin, flexbox
 ======================================== */
 
-/* ----- 标签选择器：重置默认样式 ----- */
+/* ----- Tag Selector: Reset Default Styles ----- */
 * {
     margin: 0;
     padding: 0;
@@ -16,143 +16,143 @@ html {
 }
 
 body {
-    /* 背景属性 */
+    /* Background */
     background-color: #f0f4f8;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     min-height: 100vh;
-    /* padding */
+    /* Padding */
     padding: 40px 20px;
 }
 
-/* ----- ID选择器：主容器 ----- */
+/* ----- ID Selector: Main Container ----- */
 #main-container {
     max-width: 1000px;
-    /* margin - 水平居中 */
+    /* Margin - center horizontally */
     margin: 0 auto;
 }
 
-/* ----- 类选择器：卡片行 ----- */
+/* ----- Class Selector: Card Row ----- */
 .card-row {
-    /* flexbox - 水平排列 */
+    /* Flexbox - horizontal layout */
     display: flex;
     gap: 24px;
-    /* margin */
+    /* Margin */
     margin-bottom: 24px;
 }
 
 /* ========================================
-   评价卡片通用样式
+   Testimonial Card Common Styles
 ======================================== */
 
-/* ----- 类选择器：评价卡片 ----- */
+/* ----- Class Selector: Testimonial Card ----- */
 .testimonial-card {
-    /* flexbox - 占据相等宽度 */
+    /* Flexbox - equal width */
     flex: 1;
-    /* 背景属性 */
+    /* Background */
     border-radius: 16px;
-    /* padding */
+    /* Padding */
     padding: 24px 28px;
-    /* 过渡效果 */
+    /* Transition */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* 交互效果：评价卡片hover */
+/* Hover Effect: Testimonial Card */
 .testimonial-card:hover {
     transform: translateY(-5px);
 }
 
-/* ----- 类选择器：评价卡片头部 ----- */
+/* ----- Class Selector: Testimonial Header ----- */
 .testimonial-header {
-    /* flexbox */
+    /* Flexbox */
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    /* margin */
+    /* Margin */
     margin-bottom: 16px;
 }
 
-/* ----- 类选择器：用户信息 ----- */
+/* ----- Class Selector: User Info ----- */
 .user-info {
-    /* flexbox */
+    /* Flexbox */
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-/* ----- 类选择器：头像 ----- */
+/* ----- Class Selector: Avatar ----- */
 .avatar {
     width: 54px;
     height: 54px;
     border-radius: 50%;
     object-fit: cover;
-    /* 过渡效果 */
+    /* Transition */
     transition: transform 0.3s ease;
 }
 
-/* 交互效果：头像hover */
+/* Hover Effect: Avatar */
 .avatar:hover {
     transform: scale(1.05);
 }
 
-/* ----- 类选择器：用户详情 ----- */
+/* ----- Class Selector: User Details ----- */
 .user-details {
-    /* flexbox */
+    /* Flexbox */
     display: flex;
     flex-direction: column;
     gap: 2px;
 }
 
-/* ----- 类选择器：用户名 ----- */
+/* ----- Class Selector: User Name ----- */
 .user-name {
-    /* 文本样式 */
+    /* Text Style */
     font-size: 1.1rem;
     font-weight: 700;
     line-height: 1.3;
 }
 
-/* ----- 类选择器：用户职位 ----- */
+/* ----- Class Selector: User Position ----- */
 .user-position {
-    /* 文本样式 */
+    /* Text Style */
     font-size: 0.85rem;
     font-weight: 400;
     line-height: 1.4;
 }
 
-/* ----- 类选择器：评分 ----- */
+/* ----- Class Selector: Rating ----- */
 .rating {
-    /* flexbox */
+    /* Flexbox */
     display: flex;
     gap: 2px;
 }
 
-/* ----- 类选择器：星星 ----- */
+/* ----- Class Selector: Star ----- */
 .star {
-    /* 文本样式 */
+    /* Text Style */
     font-size: 1rem;
-    /* 过渡效果 */
+    /* Transition */
     transition: transform 0.2s ease;
 }
 
-/* 交互效果：星星hover */
+/* Hover Effect: Star */
 .star:hover {
     transform: scale(1.2);
 }
 
-/* ----- 类选择器：评价文字 ----- */
+/* ----- Class Selector: Testimonial Text ----- */
 .testimonial-text {
-    /* 文本样式 */
+    /* Text Style */
     font-size: 0.92rem;
     line-height: 1.7;
     font-style: italic;
 }
 
 /* ========================================
-   评价卡片1：紫色渐变风格
+   Testimonial Card 1: Purple Gradient
 ======================================== */
 
-/* ----- ID选择器：紫色评价卡片 ----- */
+/* ----- ID Selector: Purple Testimonial Card ----- */
 #testimonial-purple {
-    /* 背景属性 - 渐变 */
+    /* Background - gradient */
     background: linear-gradient(135deg, #9F7AEA 0%, #667EEA 100%);
     box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3);
 }
@@ -161,12 +161,12 @@ body {
     box-shadow: 0 15px 50px rgba(102, 126, 234, 0.45);
 }
 
-/* 紫色卡片 - 头像边框 */
+/* Purple Card - avatar border */
 .testimonial-card--purple .avatar {
     border: 3px solid rgba(255, 255, 255, 0.8);
 }
 
-/* 紫色卡片 - 文字颜色 */
+/* Purple Card - text color */
 .testimonial-card--purple .user-name {
     color: #ffffff;
 }
@@ -176,7 +176,7 @@ body {
 }
 
 .testimonial-card--purple .company {
-    /* 文本样式 */
+    /* Text Style */
     font-weight: 600;
     color: rgba(255, 255, 255, 0.9);
 }
@@ -190,12 +190,12 @@ body {
 }
 
 /* ========================================
-   评价卡片2：白色简洁风格
+   Testimonial Card 2: White Clean Style
 ======================================== */
 
-/* ----- ID选择器：白色评价卡片 ----- */
+/* ----- ID Selector: White Testimonial Card ----- */
 #testimonial-white {
-    /* 背景属性 */
+    /* Background */
     background-color: #ffffff;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
@@ -204,12 +204,12 @@ body {
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
-/* 白色卡片 - 头像边框 */
+/* White Card - avatar border */
 .testimonial-card--white .avatar {
     border: 3px solid #e8e8e8;
 }
 
-/* 白色卡片 - 文字颜色 */
+/* White Card - text color */
 .testimonial-card--white .user-name {
     color: #1a1a2e;
 }
@@ -218,13 +218,13 @@ body {
     color: #6b7280;
 }
 
-/* 白色卡片 - 公司链接 */
+/* White Card - company link */
 .company-link {
-    /* 文本样式 */
+    /* Text Style */
     color: #3b82f6;
     text-decoration: none;
     font-weight: 500;
-    /* 过渡效果 */
+    /* Transition */
     transition: color 0.2s ease;
 }
 
@@ -233,146 +233,146 @@ body {
     text-decoration: underline;
 }
 
-/* 白色卡片 - 橙色星星 */
+/* White Card - orange stars */
 .star--orange {
     color: #f59e0b;
 }
 
 .testimonial-card--white .testimonial-text {
     color: #4b5563;
-    /* padding - 上边框分隔 */
+    /* Padding - top border separator */
     padding-top: 16px;
     border-top: 1px solid #f3f4f6;
 }
 
 /* ========================================
-   课程卡片样式
+   Course Card Styles
 ======================================== */
 
-/* ----- 类选择器：课程卡片 ----- */
+/* ----- Class Selector: Course Card ----- */
 .course-card {
-    /* flexbox */
+    /* Flexbox */
     flex: 1;
-    /* 背景属性 */
+    /* Background */
     border-radius: 16px;
     overflow: hidden;
-    /* 定位 */
+    /* Positioning */
     position: relative;
     min-height: 260px;
-    /* 过渡效果 */
+    /* Transition */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* 交互效果：课程卡片hover */
+/* Hover Effect: Course Card */
 .course-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
 }
 
-/* ----- 类选择器：紫色课程卡片 ----- */
+/* ----- Class Selector: Purple Course Card ----- */
 .course-card--purple {
-    /* 背景属性 - 渐变 */
+    /* Background - gradient */
     background: linear-gradient(135deg, #a78bfa 0%, #c4b5fd 50%, #f0abfc 100%);
 }
 
-/* ----- 类选择器：青绿色课程卡片 ----- */
+/* ----- Class Selector: Teal Course Card ----- */
 .course-card--teal {
-    /* 背景属性 - 渐变 */
+    /* Background - gradient */
     background: linear-gradient(135deg, #2dd4bf 0%, #5eead4 50%, #99f6e4 100%);
 }
 
-/* ----- 类选择器：背景图片层 ----- */
+/* ----- Class Selector: Background Image Layer ----- */
 .course-card__bg {
-    /* 定位 */
+    /* Positioning */
     position: absolute;
     top: 0;
     right: 0;
     width: 60%;
     height: 100%;
-    /* 背景属性 */
+    /* Background */
     background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400');
     background-size: cover;
     background-position: center;
     opacity: 0.3;
-    /* 过渡效果 */
+    /* Transition */
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* 交互效果：背景hover */
+/* Hover Effect: Background */
 .course-card:hover .course-card__bg {
     opacity: 0.4;
     transform: scale(1.05);
 }
 
-/* ----- 类选择器：课程内容 ----- */
+/* ----- Class Selector: Course Content ----- */
 .course-card__content {
-    /* 定位 */
+    /* Positioning */
     position: relative;
     z-index: 1;
-    /* padding */
+    /* Padding */
     padding: 28px;
-    /* flexbox */
+    /* Flexbox */
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 
-/* ----- 类选择器：课程标题 ----- */
+/* ----- Class Selector: Course Title ----- */
 .course-card__title {
-    /* 文本样式 */
+    /* Text Style */
     font-size: 1.6rem;
     font-weight: 700;
     color: #ffffff;
-    /* margin */
+    /* Margin */
     margin-bottom: 14px;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* ----- 类选择器：课程描述 ----- */
+/* ----- Class Selector: Course Description ----- */
 .course-card__desc {
-    /* 文本样式 */
+    /* Text Style */
     font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.9);
     line-height: 1.6;
-    /* margin */
+    /* Margin */
     margin-bottom: 20px;
     max-width: 85%;
 }
 
-/* ----- 类选择器：课程按钮 ----- */
+/* ----- Class Selector: Course Button ----- */
 .course-card__btn {
-    /* 文本样式 */
+    /* Text Style */
     display: inline-block;
     font-size: 0.8rem;
     font-weight: 600;
     color: #ffffff;
     text-decoration: none;
     letter-spacing: 1px;
-    /* padding */
+    /* Padding */
     padding: 10px 24px;
-    /* 背景属性 */
+    /* Background */
     background-color: transparent;
     border: 2px solid #ffffff;
     border-radius: 6px;
     width: fit-content;
-    /* 过渡效果 */
+    /* Transition */
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* 交互效果：按钮hover */
+/* Hover Effect: Button */
 .course-card__btn:hover {
     background-color: rgba(255, 255, 255, 0.2);
     transform: translateX(4px);
 }
 
 /* ========================================
-   响应式设计
+   Responsive Design
 ======================================== */
 
-/* 平板设备 */
+/* Tablet */
 @media screen and (max-width: 768px) {
     .card-row {
-        /* flexbox - 垂直排列 */
+        /* Flexbox - vertical layout */
         flex-direction: column;
         gap: 20px;
     }
@@ -399,7 +399,7 @@ body {
     }
 }
 
-/* 移动设备 */
+/* Mobile */
 @media screen and (max-width: 480px) {
     body {
         padding: 20px 16px;
